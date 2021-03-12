@@ -1,2 +1,4 @@
-# printf
-Customized printf for the Holberton project
+# Customized _printf() funciton
+
+## _printf - formatted output conversion
+My own printf function

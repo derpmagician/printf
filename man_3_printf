@@ -1,0 +1,18 @@
+.TH _PRINTF() 1.0 20201-03-15
+
+.SH NAME
+_printf() custom print formatted
+
+.SH SYNOPSIS
+_printf FORMAT [ARGUMENT]
+.B _printf
+[\fB\-\-version\fR]
+
+.SH DESCRIPTION
+.B _printf
+Project to add our own printf function
+print an output to stdout
+
+.SH AUTHOR
+Renzo Perez 
+Jose Herrera
