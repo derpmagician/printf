@@ -14,5 +14,5 @@ Project to add our own printf function
 print an output to stdout
 
 .SH AUTHOR
-Renzo Perez 
+Renzo Perez
 Jose Herrera
