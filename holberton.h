@@ -7,11 +7,11 @@
   * @specifier: The conversion specifier
   * @f: The function pointer
   */
-typedef struct fmt
+typedef struct specifiers
 {
-	char fmt;
-	int (*fn)(va_list);
-} fmt_t;
+	char *specifier;
+	int (*f)(va_list args);
+} spc_dt;
 
 int _putchar(char c);
 int _printf(const char *format, ...);
