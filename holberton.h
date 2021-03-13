@@ -9,5 +9,7 @@
   */
 int _putchar(char c);
 int _printf(const char *format, ...);
+int _print_int_binary(va_list args);
+void _recursion_int_binary(int a);
 
 #endif /* _HOLBERTON */
