@@ -17,7 +17,7 @@ int _print_int_binary(va_list args)
 	x = new;
 	if (new < 0)
 	{
-		_write('1');
+		_putchar('1');
 		new = new * -1;
 		x = new;
 		b += 1;
