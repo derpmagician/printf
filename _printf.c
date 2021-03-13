@@ -4,9 +4,9 @@
 
 /**
  * _printf - function my printf
- * @format: string whit format to print
+ * @format: string with format to print
  *
- * Return: number of chars that print
+ * Return: number of chars that prints
  */
 int _printf(const char *format, ...)
 {
