@@ -7,7 +7,7 @@
   * @specifier: The conversion specifier
   * @f: The function pointer
   */
-
+int _putchar(char c);
 int _printf(const char *format, ...);
 
 #endif /* _HOLBERTON */
