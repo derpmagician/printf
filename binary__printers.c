@@ -6,6 +6,7 @@
   * _recursion_int_binary - Prints a binary
   * @a: integer to print
   *
+  * Return: Nothing
   */
 void _recursion_int_binary(int a)
 {
@@ -14,5 +15,5 @@ void _recursion_int_binary(int a)
 	t = a;
 	if (t / 2)
 		_recursion_int_binary(t / 2);
-	_write(t % 2 + '0');
+	_putchar(t % 2 + '0');
 }
