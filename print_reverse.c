@@ -7,7 +7,7 @@
  * Return: integer.
  */
 
-int print_r(va_list arg)
+int _print_reverse(va_list arg)
 {
 char *str = va_arg(arg, char *);
 int i = 0, counter = 0;
