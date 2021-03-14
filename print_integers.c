@@ -17,7 +17,7 @@ int _print_a_integer(va_list args)
 	m = n;
 	if (m < 0)
 	{
-		_write('-');
+		_putchar('-');
 		m = m * -1;
 		n = m;
 		count += 1;
@@ -45,5 +45,5 @@ void _recursion_integer(int a)
 	t = a;
 	if (t / 10)
 		_recursion_integer(t / 10);
-	_write(t % 10 + '0');
+	_putchar(t % 10 + '0');
 }
