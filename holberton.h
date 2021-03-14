@@ -20,6 +20,8 @@ int _print_a_string(va_list args);
 int _print_format(const char *format, va_list args);
 int _print_spec(char format, va_list args);
 int _print_invalid_spec(char prev_format, char format, int count);
+int _print_a_integer(va_list args);
+void _recursion_integer(int a);
 int _print_int_binary(va_list args);
 int _print_reverse(va_list arg);
 int _print_rot(va_list arg);
