@@ -90,7 +90,7 @@ int _print_spec(char format, va_list args)
   */
 int _print_invalid_spec(char prev_format, char format, int count)
 {
-	count += _write('%');
+	count += _putchar('%');
 
 	if (prev_format == ' ')
 	{
