@@ -15,12 +15,12 @@ int _print_reverse(va_list arg)
         if (str == NULL)
             str = "(null)";
         while (str[i])
-                i++;
-                i--;
+            i++;
+        i--;
         for (; i >= 0; i--)
         {
             _putchar(str[i]);
-                counter++;
+            counter++;
         }
         return (counter);
 }
