@@ -8,7 +8,7 @@
  * Return: integer.
  */
 
-int print_rot13(va_list arg)
+int _print_rot(va_list arg)
 {
 
     int i, j, count = 0;
