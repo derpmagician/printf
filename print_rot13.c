@@ -3,7 +3,7 @@
 #include <stdlib.h>
 
 /**
- * print_rot13 - Prints a string rot13.
+ * _print_rot - Prints a string rot13.
  * @arg: String address.
  * Return: integer.
  */
