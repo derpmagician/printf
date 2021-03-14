@@ -29,7 +29,7 @@ int _print_a_string(va_list args)
 	{
 		while (arg[i])
 		{
-			_write(arg[i]);
+			_putchar(arg[i]);
 			i++;
 		}
 
