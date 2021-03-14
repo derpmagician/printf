@@ -2,9 +2,9 @@
 #include <stdlib.h>
 
 /**
-* _print_String - Print a string.
-* @arg: String address.
-* Return: integer.
+* _print_String - Print a string
+* @arg: String address
+* Return: integer
 */
 
 int _print_String(va_list arg)
