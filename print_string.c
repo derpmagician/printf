@@ -2,12 +2,12 @@
 #include <stdlib.h>
 
 /**
-* _print_string - Print a string.
+* _print_String - Print a string.
 * @arg: String address.
 * Return: integer.
 */
 
-int _print_string(va_list arg)
+int _print_String(va_list arg)
 {
 
     char *str = va_arg(arg, char *);

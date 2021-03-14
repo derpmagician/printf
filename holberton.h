@@ -25,7 +25,7 @@ void _recursion_integer(int a);
 int _print_int_binary(va_list args);
 int _print_reverse(va_list arg);
 int _print_rot(va_list arg);
-int _print_string(va_list arg);
+int _print_String(va_list arg);
 void _recursion_int_binary(int a);
 int _validate_char(char _type);
 
