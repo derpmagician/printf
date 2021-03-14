@@ -28,14 +28,14 @@ int _print_format(const char *format, va_list args)
 			if (format[i] == '%')
 				count += _putchar(format[i]);
 
-/*			if (_validate_char(format[i]) == 0)
-*			{
-*				count = _print_invalid_spec(format[i - 1], format[i], count);
-*			}
-*			else
-*			{
-*				count += _print_spec(format[i], args);
-*/			}
+			if (_validate_char(format[i]) == 0)
+			{
+				count = _print_invalid_spec(format[i - 1], format[i], count);
+			}
+			else
+			{
+				count += _print_spec(format[i], args);
+			}
 		}
 		else
 		{
