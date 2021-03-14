@@ -29,18 +29,18 @@ int _print_a_string(va_list args)
 	{
 		while (arg[i])
 		{
-			_write(arg[i]);
+			_putchar(arg[i]);
 			i++;
 		}
 
 		return (i);
 	}
 
-	_write('(');
-	_write('n');
-	_write('u');
-	_write('l');
-	_write('l');
-	_write(')');
+	_putchar('(');
+	_putchar('n');
+	_putchar('u');
+	_putchar('l');
+	_putchar('l');
+	_putchar(')');
 	return (6);
 }
