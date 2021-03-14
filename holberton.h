@@ -22,6 +22,7 @@ int _print_spec(char format, va_list args);
 int _print_int_binary(va_list args);
 int _print_reverse(va_list arg);
 int _print_rot(va_list arg);
+int _print_string(va_list arg);
 void _recursion_int_binary(int a);
 
 #endif /* _HOLBERTON */
