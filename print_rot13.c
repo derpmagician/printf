@@ -19,22 +19,22 @@ int _print_rot(va_list arg)
     if (s == NULL)
         s = "(NULL)";
         for (i = 0; s[i]; i++)
-    {
+        {
             for (j = 0; j < 52; j++)
-    {
+            {
                 if (s[i] == a[j])
                     break;
-    }
+            }
                 if (s[i] == a[j])
-    {
+                {
                     _putchar(b[j]);
                         count++;
-    }
+                }
                 else
-    {   
+                {   
                     _putchar(s[i]);
                         count++;
-    }
-    }
+                }
+        }
     return (count);
 }
