@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * print_r - Print a string in reverse.
+ * _print_reverse - Print a string in reverse.
  * @arg: String address.
  * Return: integer.
  */
