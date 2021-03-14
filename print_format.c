@@ -92,12 +92,12 @@ int _print_invalid_spec(char prev_format, char format, int count)
 
 	if (prev_format == ' ')
 	{
-		count += _write(' ');
-		count += _write(format);
+		count += _putchar(' ');
+		count += _putchar(format);
 	}
 	else
 	{
-		count += _write(format);
+		count += _putchar(format);
 	}
 
 	return (count);
