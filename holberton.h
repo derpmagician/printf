@@ -33,8 +33,9 @@ void _recursion_integer(int a);
 * int _print_String(va_list arg);
 * int _print_address(va_list arg);
 * int _print_reverse(va_list arg);
+*
+*int _print_rot(va_list arg);
 */
-int _print_rot(va_list arg);
 int _validate_char(char _type);
 
 #endif /* _HOLBERTON */
