@@ -31,9 +31,10 @@ void _recursion_int_binary(int a);
 * int _print_int_unsigned(va_list ap);
 * int _recursion_int_unsigned(unsigned int num, int *count);
 * int _print_address(va_list arg);
-* int _print_reverse(va_list arg);
 * int _print_String(va_list arg);
 */
+
+int _print_reverse(va_list arg);
 int _print_rot(va_list arg);
 int _validate_char(char _type);
 
