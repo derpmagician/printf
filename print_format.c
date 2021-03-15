@@ -65,7 +65,7 @@ int _print_spec(char format, va_list args)
 		{"i", _print_a_integer},
 		{"b", _print_int_binary},
 		{"R", _print_rot},
-		{"r", _print_reverse},
+		//{"r", _print_reverse},
 		/*{"p", _print_address}, need work*/
 		/*{"o"} _print_int_octal}, need work*/
 		/*{"u"} _print_int_unsigned}, need work*/
