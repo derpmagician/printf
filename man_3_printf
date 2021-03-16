@@ -68,6 +68,7 @@ _printf("%s", "Holberton arrived in Peru");
 .SH Language
 Use 'C' Language.
 
-.SH AUTHOR
+.SH AUTHORS
 Renzo Perez
+.RS 0
 Jose Herrera
