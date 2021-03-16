@@ -21,7 +21,7 @@ if (str[c] < 32 || str[c] >= 127)
 _putchar(92);
 _putchar(120);
 }
-else 
+else
 {
 _putchar(str[c]);
 i++;
