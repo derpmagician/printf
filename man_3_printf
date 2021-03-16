@@ -1,17 +1,72 @@
-.TH _PRINTF() 1.0 20201-03-15
+.TH _PRINTF() 1.0 2021-03-16
 
 .SH NAME
 _printf() custom print formatted
+
 
 .SH SYNOPSIS
 _printf FORMAT [ARGUMENT]
 .B _printf
 [\fB\-\-version\fR]
+#include "holberton.h"
+
 
 .SH DESCRIPTION
 .B _printf
 Project to add our own printf function
+
+.SH EXIT VALUE
 print an output to stdout
+
+.RS 0
+int _print_format(const char *format, ...)
+
+.RS 0
+int _print_a_char
+
+.RS 0
+int _print_a_string
+
+.RS 0
+int _print_a_integer
+
+.RS 0 
+.B %c:
+.RS 0
+Print a character.
+
+.RS 0
+.B %s:
+.RS 0
+For string we use 's', the const char * is expected to be a pointer to an array.
+
+.RS 0
+.B %d, %i:
+.RS 0
+For integers we use 'd' or 'i', the int argument convert to a signed decimal.
+
+.RS 0
+.B %b:
+.RS 0
+Print a binary.
+
+.RS 0
+.B %R:
+.RS 0
+Print the rot13.
+
+.RS 0
+.B %%:
+.RS 0
+Print %.
+
+.SH EXAMPLE
+We gonna print "Holberton arrived in Peru"
+.RS 0
+_printf("%s", "Holberton arrived in Peru");
+
+.SH Language
+Use 'C' Language.
 
 .SH AUTHOR
 Renzo Perez
