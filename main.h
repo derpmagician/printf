@@ -1,6 +1,11 @@
-#ifndef HOLBERTON_H
-#define HOLBERTON_H
+#ifndef MAIN_H
+#define MAIN_H
+
 #include <stdarg.h>
+#include <limits.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <unistd.h>
 
 /**
   * struct specifiers - Struct specifiers
@@ -25,13 +30,11 @@ int _print_a_char(va_list args);
 int _print_a_string(va_list args);
 
 int _print_a_integer(va_list args);
-void _recursion_integer(int a);
 
 int _print_int_binary(va_list args);
-void _recursion_int_binary(int a);
 
 int _print_rot(va_list arg);
 int _print_reverse(va_list arg);
 int _print_String(va_list arg);
 
-#endif /* _HOLBERTON */
+#endif /* MAIN_H */

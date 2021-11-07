@@ -1,6 +1,20 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include "holberton.h"
+#include "main.h"
+
+/**
+  * _recursion_integer - Prints a integer
+  * @a: integer to print
+  *
+  * Return: Nothing
+  */
+void _recursion_integer(int a)
+{
+	unsigned int t;
+
+	t = a;
+	if (t / 10)
+		_recursion_integer(t / 10);
+	_putchar(t % 10 + '0');
+}
 
 /**
   * _print_a_integer - Prints a integer
@@ -30,20 +44,4 @@ int _print_a_integer(va_list args)
 
 	_recursion_integer(m);
 	return (count);
-}
-
-/**
-  * _recursion_integer - Prints a integer
-  * @a: integer to print
-  *
-  * Return: Nothing
-  */
-void _recursion_integer(int a)
-{
-	unsigned int t;
-
-	t = a;
-	if (t / 10)
-		_recursion_integer(t / 10);
-	_putchar(t % 10 + '0');
 }

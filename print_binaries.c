@@ -1,6 +1,4 @@
-#include "holberton.h"
-#include <stdlib.h>
-#include <stdio.h>
+#include "main.h"
 
 /**
   * _print_int_binary - Prints a int converted to binary
@@ -10,38 +8,28 @@
   */
 int _print_int_binary(va_list args)
 {
-	unsigned int x = 0;
-	int b = 0, new = 0;
+	unsigned int n, count = 0, i = 0;
+	int arr[100];
 
-	new = va_arg(args, int);
-	x = new;
-	if (new < 0)
+	n = va_arg(args, int);
+	if (n < 2)
 	{
-		_putchar('1');
-		new = new * -1;
-		x = new;
-		b += 1;
+		_putchar(n + '0');
+		count = 1;
 	}
-	while (x > 0)
+	else if (n >= 2)
 	{
-		x = x / 2;
-		b++;
+		while (n > 0)
+		{
+			arr[i] = n % 2;
+			n /= 2;
+			i++;
+		}
 	}
-	_recursion_int_binary(new);
-	return (b);
-}
-
-/**
-  * _recursion_int_binary - Prints a binary
-  * @a: integer to print
-  *
-  */
-void _recursion_int_binary(int a)
-{
-	unsigned int t;
-
-	t = a;
-	if (t / 2)
-		_recursion_int_binary(t / 2);
-	_putchar(t % 2 + '0');
+	while (i--)
+	{
+		_putchar(arr[i] + '0');
+		count++;
+	}
+	return (count);
 }

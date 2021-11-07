@@ -1,6 +1,4 @@
-#include "holberton.h"
-#include <stdarg.h>
-#include <stdlib.h>
+#include "main.h"
 
 /**
  * _print_rot - Prints a string rot13.
