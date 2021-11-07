@@ -8,7 +8,7 @@
   */
 int _validate_char(char _type)
 {
-	char _types[] = {'c', 's', 'd', 'i', 'b', 'R', 'r', 'S', '%'};
+	char _types[] = {'c', 's', 'd', 'i', 'b', 'o', 'x', 'X', 'R', 'r', 'S', '%'};
 	int i = 0;
 
 	while (_types[i])
@@ -36,6 +36,9 @@ int _print_spec(char format, va_list args)
 		{"d", _print_a_integer},
 		{"i", _print_a_integer},
 		{"b", _print_int_binary},
+		{"o", print_octal},
+		{"x", print_hex},
+		{"X", print_caps_HEX},
 		{"R", _print_rot},
 		{"r", _print_reverse},
 		{"S", _print_String},

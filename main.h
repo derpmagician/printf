@@ -32,6 +32,9 @@ int _print_a_string(va_list args);
 int _print_a_integer(va_list args);
 
 int _print_int_binary(va_list args);
+int print_octal(va_list args);
+int print_hex(va_list args);
+int print_caps_HEX(va_list args);
 
 int _print_rot(va_list arg);
 int _print_reverse(va_list arg);
