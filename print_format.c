@@ -8,7 +8,7 @@
   */
 int _validate_char(char _type)
 {
-	char _types[] = {'c', 's', 'd', 'i', 'b', 'R', 'S', '%'};
+	char _types[] = {'c', 's', 'd', 'i', 'b', 'R', 'r', 'S', '%'};
 	int i = 0;
 
 	while (_types[i])
@@ -37,7 +37,7 @@ int _print_spec(char format, va_list args)
 		{"i", _print_a_integer},
 		{"b", _print_int_binary},
 		{"R", _print_rot},
-		/*{"r", _print_reverse},*/
+		{"r", _print_reverse},
 		{"S", _print_String},
 		/*{"p", _print_address}, need work*/
 		/*{"o"} _print_int_octal}, need work*/
@@ -109,13 +109,9 @@ int _print_format(const char *format, va_list args)
 				count += _putchar(format[i]);
 
 			if (_validate_char(format[i]) == 0)
-			{
 				count = _print_invalid_spec(format[i - 1], format[i], count);
-			}
 			else
-			{
 				count += _print_spec(format[i], args);
-			}
 		}
 		else
 		{
